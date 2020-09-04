@@ -12,9 +12,9 @@ class Bin{
     }
 
   display(){
-    push();
-    translate(this.body.position.x, this.body.position.y);
-    rotate(angle);
-    pop();
+     var pos =this.body.position;
+       rectMode(CENTER);
+         fill("red");
+        rect(pos.x,pos.y, this.width, this.height);
   }
 }
